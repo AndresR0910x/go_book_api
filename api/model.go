@@ -7,7 +7,7 @@ type Book struct {
 	ID     uint   `json:"id" gorm:"primarykey"`
 	Title  string `json:"title"`
 	Author string `json:"author"`
-	Year   string `json:"year"`
+	Year   int `json:"year"`
 }
 
 // Create a func for json response with status, message and Data using strcut tags ""
